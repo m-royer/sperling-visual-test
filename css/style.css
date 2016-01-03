@@ -1,0 +1,219 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/********************
+ *     Page CSS
+ * ******************/
+
+body {
+  text-align: center;
+  background: #FFF;
+  font-family:sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.cell {
+  list-style-type: none;
+  height: 40%;
+}
+
+.display-area {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-55%);
+	width: 1024px;
+}
+
+.display-area li {
+  float: left;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 33%;
+  height: 11rem;
+}
+
+.display-area li.show {
+	border-bottom: dashed 1px #000;
+}
+
+.display-area li.show:nth-of-type(7), .display-area li:nth-of-type(8), .display-area li:nth-of-type(9) {
+	border-bottom: none;
+}
+
+.display-area li:nth-of-type(1n) {
+  padding-top:0;
+}
+
+.display-area h1 {
+  display: block;
+  text-align: center;
+  font-size: 11rem;
+}
+
+.active {
+  background: #cceba7;
+}
+
+.clearfix {
+  overflow: hidden;
+}
+
+.overlay {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background: #DFDFDF;
+	text-align: center;
+}
+
+.container-color {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-55%);
+	border: solid 1px #CCC;
+	z-index: 2;
+	background: #FFF;
+}
+
+.overlay-container {
+	height: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.overlay-container h1 {
+	font-size: 100px;
+	margin-top: -120px;
+	margin-bottom: 30px;
+}
+
+.overlay-container .row {
+	overflow: auto;
+	margin-bottom: 5px;
+}
+
+.overlay-container .left-col {
+	float: left;
+	text-align: right;
+	width: 47%;
+	font-size: 25px;
+}
+
+.overlay-container .right-col {
+	float: right;
+	text-align: left;
+	width: 45%;
+	font-size: 25px;
+}
+
+.overlay-container input {
+	margin: 0;
+	font-size: 20px;
+	width: 3rem;
+	text-align: right;
+	padding: 2px 5px;
+	border: solid 1px #CCC;
+	border-radius: 3px;
+}
+
+.overlay-container .button {
+	margin: 10px auto;
+	width: 200px;
+	padding: 7px 15px;
+	font-size: 30px;
+	background: #48a538;
+	color: #FFF;
+	border: none;
+	cursor:pointer;
+	border-radius: 5px;
+}
+
+.overlay-container .yellow {
+	background: #d3d123;
+}
+
+.author {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: #444;
+}
+
+.author a, .author a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+.author a:hover, .author a:active, .author a:focus {
+	color: #444;
+	text-decoration: none;
+}
+
+#countdown {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 5px;
+	margin-top: -5px;
+	background: #F00;
+}
+
+.hide {
+	display: none;
+}
