@@ -39,7 +39,7 @@ function sperlingTest(audioControl) {
   this.run = function (soundDelaySeconds,LetterDisplayTimeMs,PauseTimeSeconds) {
     if(!running) {
       running = true;
-      audioDelayTime = soundDelaySeconds*1000;
+      audioDelayTime = soundDelaySeconds;
       lettersDisplayTime = LetterDisplayTimeMs;
       pauseTime = PauseTimeSeconds*1000;
       _clearLetters();
