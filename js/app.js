@@ -112,7 +112,13 @@ function sperlingTest(audioControl) {
   function _setCountdown(ms) {
     countdownTotal = ms;
     currentCountDown = 0;
-    countdownTimer = setInterval(_showCountdown,50);
+    var isChecked = $('input[name="countdown_chk"]').prop("checked");
+    if(isChecked === true) {
+    	$("#countdown").css("display","block");
+    	setInterval(_showCountdown,50);
+    } else {
+    	$("#countdown").css("display","none");
+    }
   };
   
   function _showCountdown() {
@@ -122,7 +128,7 @@ function sperlingTest(audioControl) {
       $("#countdown").css("width",percentage+"%");
       currentCountDown++;
     } else {
-      clearInterval(countdownTimer);
+      clearInterval(_showCountdown);
       currentCountDown = 0;
       countdownTotal = 0;
       $("#countdown").css("width","100%");
