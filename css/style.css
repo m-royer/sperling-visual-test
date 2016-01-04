@@ -215,27 +215,49 @@ body {
 	background-position: right 10px center;
 }
 
-.author {
-	margin-top: 1.5rem;
+.links {
+	margin-top: 1rem;
 	width: 100%;
 	margin-bottom: -1.5rem;
-	text-align: center;
+	overflow: hidden;
+}
+
+.links .instructions {
+	text-align: right;
+	width: 50%;
+	margin-right: 10px;
+	padding-right: 10px;
+	font-size: 1rem;
+	color: #8ba6c9;
+	float: left;
+	border-right: solid 2px #FFF;
+}
+
+.links .instructions a, .links .instructions a:visited {
+	color: #8ba6c9;
+	text-decoration: none;
+}
+
+.links .instructions a:hover, .links .instructions a:active, .links .instructions a:focus {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.links .author {
+	float: left;
+	text-align: left;
 	font-size: 1rem;
 	color: #8ba6c9;
 }
 
-.author a, .author a:visited {
+.links .author a, .links .author a:visited {
 	color: #8ba6c9;
 	text-decoration: none;
 }
 
-.author a:hover, .author a:active, .author a:focus {
+.links .author a:hover, .links .author a:active, .links .author a:focus {
 	color: #FFF;
 	text-decoration: none;
-}
-
-.author .separator {
-	color: #FFF;
 }
 
 #countdown {
