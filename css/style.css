@@ -125,7 +125,8 @@ body {
 	width: 100%;
 	top: 50%;
 	transform: translateY(-55%);
-	border: solid 1px #263f67;
+	border-top: solid 1px #263f67;
+	border-bottom: solid 1px #263f67;
 	z-index: 2;
 	background: #FFF;
 }
@@ -139,8 +140,9 @@ body {
 
 .overlay-container h1 {
 	font-size: 100px;
-	margin-top: -120px;
-	margin-bottom: 30px;
+	margin-top: -220px;
+	padding-top: 100px;
+	padding-bottom: 30px;
 	color: #FFF;
 }
 
@@ -239,6 +241,10 @@ body {
 	text-decoration: none;
 }
 
+.author .separator {
+	color: #FFF;
+}
+
 #countdown {
 	position: absolute;
 	bottom: 0;
@@ -256,16 +262,15 @@ input[type=checkbox] {
 	visibility: hidden;
 }
 
-/* SQUARED THREE */
 /* from http://cssdeck.com/labs/css-checkbox-styles */
-.squaredThree {
+.countdownchk {
 	float: left;
 	width: 20px;	
 	margin: 0px auto;
 	position: relative;
 }
 
-.squaredThree label {
+.countdownchk label {
 	cursor: pointer;
 	position: absolute;
 	width: 20px;
@@ -276,7 +281,7 @@ input[type=checkbox] {
 	border: solid 1px #456da0;
 }
 
-.squaredThree label:after {
+.countdownchk label:after {
 	opacity: 0;
 	content: '';
 	position: absolute;
@@ -296,10 +301,10 @@ input[type=checkbox] {
 	transform: rotate(-45deg);
 }
 
-.squaredThree label:hover::after {
+.countdownchk label:hover::after {
 	opacity: 0.3;
 }
 
-.squaredThree input[type=checkbox]:checked + label:after {
+.countdownchk input[type=checkbox]:checked + label:after {
 	opacity: 1;
 }
