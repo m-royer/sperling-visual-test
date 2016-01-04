@@ -72,7 +72,7 @@ body {
 .display-area {
 	position: absolute;
 	top: 50%;
-	transform: translateY(-55%);
+	transform: translateY(-50%);
 	width: 1024px;
 }
 
@@ -92,12 +92,7 @@ body {
 	border-bottom: none;
 }
 
-.display-area li:nth-of-type(1n) {
-  padding-top:0;
-}
-
 .display-area h1 {
-  display: block;
   text-align: center;
   font-size: 11rem;
 }
@@ -124,7 +119,7 @@ body {
 	position: absolute;
 	width: 100%;
 	top: 50%;
-	transform: translateY(-55%);
+	transform: translateY(-50%);
 	z-index: 2;
 	background: #FFF;
 }
@@ -305,4 +300,14 @@ input[type=checkbox] {
 
 .countdownchk input[type=checkbox]:checked + label:after {
 	opacity: 1;
+}
+
+.center-dot {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateXY(-50%,-50%);
+	color: #000;
+	opacity: 0.2;
+	font-size: 2rem;
 }
