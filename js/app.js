@@ -17,6 +17,14 @@ $(document).ready(function() {
   	var testingAudio = new audioTest(theAudio);
     testingAudio.run();
   });
+  
+  $("#showLetters").on("touch click", function() {
+  	theTest.showLetters();
+  });
+  
+  $(".back-button").on("touch click", function() {
+  	theTest.hideLetters();
+  });
 });
 
 /*  Class sperlingTest  */
@@ -46,6 +54,7 @@ function sperlingTest(audioControl) {
       _calcLetters();
       _calcAudio();
       _setCountdown(pauseTime);
+      $("#showLetters").css("display","inline-block");
       
       // Overlay->Show Letters
       setTimeout(function() {
@@ -80,6 +89,19 @@ function sperlingTest(audioControl) {
   
   this.hideOverlay = function () {
   	$(".overlay").addClass("hide");
+  };
+  
+  this.showLetters = function () {
+  	$(".back-button").css("display","block");
+  	_displayLetters();
+  	_setCountdown(0);
+  	this.hideOverlay();
+  };
+  
+  this.hideLetters = function () {
+  	_clearLetters();
+  	_showOverlay();
+  	$(".back-button").css("display","none");
   };
   
   

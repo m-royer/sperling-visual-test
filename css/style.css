@@ -97,6 +97,32 @@ body {
   font-size: 11rem;
 }
 
+.back-button {
+	display: none;
+	position: absolute;
+	left: 40px;
+	top: 40px;
+	margin: 10px;
+	padding: 7px 20px;
+	padding-left: 40px;
+	font-size: 30px;
+	background: #8ba6c9;
+	color: #FFF;
+	border: none;
+	cursor:pointer;
+	border-radius: 5px;
+	background-image: url('../img/back-arrow.png');
+	background-repeat: no-repeat;
+	background-position: left 10px center;
+}
+
+.back-button:hover {
+	background: #456da0;
+	background-image: url('../img/back-arrow.png');
+	background-repeat: no-repeat;
+	background-position: left 10px center;
+}
+
 .active {
   background: #cceba7;
 }
@@ -178,8 +204,8 @@ body {
 .overlay-container .button {
 	display: inline-block;
 	margin: 10px;
-	width: 200px;
-	padding: 7px 10px;
+	padding: 7px 20px;
+	padding-right: 40px;
 	font-size: 30px;
 	background: #8fc9a4;
 	color: #FFF;
@@ -204,13 +230,31 @@ body {
 	background-image: url('../img/speaker.png');
 	background-repeat: no-repeat;
 	background-position: right 10px center;
-	padding-right: 35px;
+	padding-right: 40px;
 }
 
 .overlay-container .demo:hover {
 	background: #456da0;
 	color: #FFF;
 	background-image: url('../img/speaker.png');
+	background-repeat: no-repeat;
+	background-position: right 10px center;
+}
+
+.overlay-container .letters {
+	display: none;
+	background: #dbb985;
+	color: #FFF;
+	background-image: url('../img/lines.png');
+	background-repeat: no-repeat;
+	background-position: right 10px center;
+	padding-right: 40px;
+}
+
+.overlay-container .letters:hover {
+	background: #d68d28;
+	color: #FFF;
+	background-image: url('../img/lines.png');
 	background-repeat: no-repeat;
 	background-position: right 10px center;
 }
